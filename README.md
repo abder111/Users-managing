@@ -4,7 +4,7 @@
 - MongoDB
 - Express
 - React
-- node
+- Node
 
 
 
