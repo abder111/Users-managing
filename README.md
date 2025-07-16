@@ -1,5 +1,10 @@
 
 # Fullstack web app for Users-managing
+## Using MERN stack
+- MongoDB
+- Express
+- React
+- node
 
 
 
