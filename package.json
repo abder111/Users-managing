@@ -1,25 +1,19 @@
 {
-	"name": "mern-crash-course",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "NODE_ENV=development nodemon backend/server.js",
-		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-		"start": "cross-env NODE_ENV=production node backend/server.js"
-	},
-	"type": "module",
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"dotenv": "^16.4.5",
-		"express": "^4.19.2",
-		"mongodb": "^6.17.0",
-		"mongoose": "^8.5.1"
-	},
-	"devDependencies": {
-		"cross-env": "^7.0.3",
-		"nodemon": "^3.1.4"
-	}
-}
+  "name": "user-management-app",
+  "version": "1.0.0",
+  "description": "MERN Stack User Management Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["mern", "user-management", "react", "node", "express", "mongodb"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 

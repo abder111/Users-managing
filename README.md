@@ -267,10 +267,3 @@ To update the application:
 ---
 
 **Happy Coding! 🎉** 
-
-
-
-
-
-
-
